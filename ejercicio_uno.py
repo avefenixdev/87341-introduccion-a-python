@@ -1,5 +1,5 @@
 """ 
-Ejercicio 1: Variables y tipos (15 break + 5)
+Ejercicio 1: Variables y tipos (15 break + 5 min)
 
 Consigna: Crear un programa que guarde en variables:
 
