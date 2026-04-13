@@ -74,3 +74,39 @@ else:
 # 1  0
 # 0  1
 
+print("Listas: Almacenar varios valores")
+""" 
+nombre = "Pedro"
+nombre2 = "Carlos"
+nombre3 = "Ana"
+# Es dificil de mantener almacenar 100 personas cada una en una variables
+ """
+
+nombres = ["Pedro", "Carlos", "Ana"]
+
+# Listas homogeneas (Recomendables)
+## Lista de números
+numeros = [10, 20, 30, 40]
+## Lista de cadenas
+#            0          1          2
+frutas = ["manzana", "banana", "naranja"]
+
+# Listas heteregoneas
+## Lista mixta
+datos = [25, "Maxi", 1.70, True]
+
+# Lista vacía
+lista_vacia = []
+
+
+# Indices empieza en 0, NO EN 1
+
+print(frutas[1]) # banana
+print(frutas[2]) # naranja
+
+# Modificando la fruta manzana
+
+frutas[0] = "sandía"
+
+print(frutas)
+print(frutas[0])
