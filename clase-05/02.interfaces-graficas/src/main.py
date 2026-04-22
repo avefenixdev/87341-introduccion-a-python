@@ -1,4 +1,4 @@
-# Thinker (es una librería para crear interfaces gráficas) GUI
+# Tkinter (es una librería para crear interfaces gráficas) GUI
 # GUI -> Graphical User Interface (interfaz gráfica)
 # Es una librería buildin (Incorporada dentro del lenguaje)
 # Set de compoentes de interfaz gráfica (Ventanas, botones, campo de texto, etc)
