@@ -39,7 +39,7 @@ except ZeroDivisionError:
     print("No se puede dividir por cero.")
 except ValueError:
     print("Ingresó un valor inválido")
-print("Fin de programa") """
+print("Fin de programa")  """
 """ print("Inicio de programa")
 try:
     numero = int(input("Ingrese un número: "))
@@ -67,9 +67,38 @@ try:
 except ZeroDivisionError:
     print("No se puede dividir por cero")
 finally:
-    print("Esto se ejecuta sin importantar si hay excepción o no. Siempre")
+    print("Esto se ejecuta sin importar si hay excepción o no. Siempre")
 
 # Cerrar archivos
 # Cerrar conexión de la base de datos
 # Liberar recursos
 # Logs
+
+# ! Errores personalizados
+## Es un error que crea el desarrollador, un nombre claro, para una especifica
+
+# -> Error genericos -> ValueError -> genérico
+# -> Error personalizado -> EdadInvalidaError
+
+# EdadInvalidaError.py
+# ? IMPORTANTE: Heredan de Exception
+class EdadInvalidaError(Exception):
+    pass
+
+# raise -> Palabra reservada del lenguaje para lanzar una excepción
+# validar_edad.py
+def validar_edad(edad):
+    if edad < 0:
+        raise EdadInvalidaError("La edad no puede ser negativa")
+    return edad
+
+# main.py
+
+try:
+    edad = int(input("Ingresa tu edad: "))
+    validar_edad(edad)
+    print("Edad válida:", edad)
+except EdadInvalidaError as e:
+    print("Error:", e)
+except ValueError:
+    print("Eso no es un número...")
